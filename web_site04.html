@@ -1,0 +1,493 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+/*--------------------------------------------------- reset*/
+* {margin:0; padding:0;}
+li {list-style:none;}
+
+/*--------------------------------------------------- header*/
+.header {overflow:hidden;
+				width:1000px; margin:0 auto;}
+				
+nav1 {width:100%; overflow:hidden;}
+
+.ul1 {overflow:hidden;
+			width:500px; float:left;}
+.ul1 li {width:100px; height:30px;
+			box-sizing:border-box;
+		  text-align:center; line-height:30px;
+			float:left;}
+
+.ul2 {overflow:hidden;
+			width:400px; float:right;}			
+.ul2 li {width:100px; height:30px;
+			box-sizing:border-box;
+			text-align:center; line-height:30px;
+			float:left;}
+
+.hr1 {width:1000px; margin:0 auto; color:#EAEAEA}
+
+/*--------------------------------------------------- 2 */
+.header2 {overflow:hidden;
+				width:1000px; margin:0 auto;}
+				
+nav3 {width:100%; overflow:hidden;}
+
+.ul3 {overflow:hidden;
+			width:400px; float:right;}
+.ul3 li {width:80px; height:30px;
+			box-sizing:border-box;
+			text-align:center; line-height:30px;
+			float:left;}
+			
+/*---------------------------------------------------3 */
+.header3 {overflow:hidden;
+				width:1200px; margin:0 auto;}
+								
+nav4 {width:100%; overflow:hidden;}
+
+.ul4 {overflow:hidden;
+			width:1200px; height:100px;}
+.ul4>li {float:left;}
+.ul4>div {float:none;}
+#input {width:300px; height:25px;
+			background-color:white;
+			border:3px solid #900;
+			margin-left:162px;
+			margin-top:30px}
+			
+.input2 {width:60px; height:40px;
+			background-color:#900; color:white;
+			box-sizing:border-box;
+			margin-left:10px; margin-top:30px;
+			text-align:center; line-height:40px;
+			overflow:hidden;}
+.left>div {float:left;}
+.bottom {width:390px; margin:0 auto;
+					margin-right:30px;}
+.bottom>ul {float:left;
+						width:90px; height:20px;
+						box-sizing:border-box;	
+						text-align:center; line-height:20px;
+						margin-top:5px; overflow:hidden;}
+
+.input3 {width:250px; height:100px;
+				margin-left:162px;
+				overflow:hidden;}
+
+/*--------------------------------------------------- lnb */
+.lnb {width:100%; overflow:hidden;
+		background-color:#900}
+
+.ul5 {width:1200px; margin:0 auto;}
+.ul5 li {width:300px; height:50px;
+			box-sizing:border-box; border:1px solid #933;
+			text-align:center; line-height:50px;
+			float:left;
+			background-color:#900; color:white;}
+
+/*--------------------------------------------------- main */
+.main {width:100%; overflow:hidden;
+			background-image:url(img/seoul9.png);}
+
+.main_img {width:1200px; margin:0 auto;}
+.main_img img {float:left;}
+
+/*--------------------------------------------------- image */
+.text {width:1200px; margin:0 auto;
+			overflow:hidden;}
+.text>li {float:left;
+				margin-top:40px; margin-bottom:10px}
+.mrg2 {margin-left:380px; 
+			width:50px; height:20px;
+			background-color:#099;
+			box-sizing:border-box; 
+			line-height:20px; text-align:center;
+			color:white; font-size:10px;}
+.mrg3 {margin-left:60px}
+.mrg4 {margin-left:390px}
+.mrg5 {margin-left:10px}
+
+
+.img {width:1200px; margin:0 auto;}
+.mrg1 {margin-left:60px}
+.img img {float:left;}
+
+
+
+/*--------------------------------------------------- image2 */
+.img2 {width:1200px; margin:0 auto;
+			overflow:hidden;}
+.img2 img {float:left; margin-top:20px;
+					margin-bottom:40px; cursor:pointer;}
+
+/*--------------------------------------------------- image3 */
+.text2 {width:1200px; margin:0 auto;
+				overflow:hidden;
+				height:330px;}
+.text2>li {float:left;}
+
+.mrg12 {margin-left:110px;}
+.mrg13 {margin-left:20px;}
+.mrg14 {margin-top:20px;}
+.mrg15 {margin-left:25px; border:1px solid lightgray}
+.mrg16 {margin-left:25px;
+				width:385px; height:270px;
+				text-align:center;}
+.mrg17 {text-align:center;
+				line-height:20px}
+.mrg18 {margin-left:130px}
+
+.text2>div {float:none;}
+
+.img3{width:1200px; margin:0 auto;}
+.img3>li {float:left;}
+
+.button {float:right; margin-top:15px;}
+.flt {float:none;}
+
+
+				
+	
+				
+/*--------------------------------------------------- tap */
+#chk01, #chk02 {display:none;}
+
+#chk01 ~ .sheet01 {display:none;}
+#chk01:checked ~ .sheet01 {display:block;}
+
+#chk02 ~ .sheet02 {display:none;}
+#chk02:checked ~ .sheet02 {display:block;}
+
+
+.title {overflow:hidden;}
+
+label {width:185px; height:40px;
+			background-color:white;
+			text-align:center; line-height:40px;
+			display:block; float:left;}
+
+#chk01:checked ~ .title .btn01{background-color:white; color:red; 
+															border-top:1px solid red; 
+															border-right:1px solid red;
+															border-left:1px solid red;}
+#chk01:checked ~ .title .btn02{border-bottom:1px solid red;}
+
+#chk02:checked ~ .title .btn02{background-color:white; color:red; 
+															border-top:1px solid red; 
+															border-right:1px solid red;
+															border-left:1px solid red}
+#chk02:checked ~ .title .btn01{border-bottom:1px solid red;}
+
+.sheet {width:370px; height:260px;
+				background-color:white; color:black;
+				font-size:16px;
+				text-align:center; line-height:260px;}
+				
+.sheet>ul {float:left;}
+
+.han {overflow:hidden; float:left;
+			margin:10px 10px; width:195px; height:260px;}
+.han li {width:195px; height:35px; float:left;
+			box-sizing:border-box;
+		  	text-align:center; line-height:30px;
+			white-space:nowrap;
+		     overflow:hidden;
+		     text-overflow:ellipsis;}
+
+.date {overflow:hidden; float:right; width:95px; height:260px;
+			margin:10px 10px}			
+.date li {width:90px; height:35px;
+			box-sizing:border-box;
+			text-align:center; line-height:30px;
+			float:left;}			
+/*--------------------------------------------------- image4 */
+.cnt {width:100%; background-color:lightgray;
+		overflow:hidden;}
+.graybg {width:1200px; margin:0 auto;}
+.img3>li {float:left; 
+				margin-top:30px; margin-bottom:10px}
+
+.mrg6 {margin-left:370px}
+.mrg7 {margin-left:60px}
+.mrg8 {margin-left:390px}
+
+
+.img4{width:1200px; margin:0 auto;
+			overflow:hidden;  margin-bottom:30px}
+.img4 img {float:left;}
+.mrg9 {margin-left:45px}
+.mrg10 {margin-left:45px}
+.mrg11 {margin-left:45px}
+
+div>textarea {width:370px; height:155px;
+						box-sizing:border-box;}
+/*--------------------------------------------------- footer */
+.fts1 {width:100%; background-color:#003; color:white;
+		overflow:hidden;}
+.ft1 {width:1200px; margin:0 auto;}
+.ftul1>li {float:left;
+				text-align:center; box-sizing:border-box;
+				width:100px; height:70px;
+				line-height:70px}
+
+.ftul1_2 {float:right;}
+.ftul1_2>li {float:left;
+					text-align:center; box-sizing:border-box;
+					width:200px; height:70px;
+					line-height:70px}
+					
+/*--------------------------------------------------- footer */
+.fts2 {width:100%; background-color:#666;
+		overflow:hidden;}
+.ft2 {width:1200px; margin:0 auto; padding:20px}
+.ftul2>li {float:left;
+				text-align:center; box-sizing:border-box;}
+
+.ftul2_2 {float:right;}	
+.ftul2_2>li {float:left;}
+.ftul2_2 img {margin-right:5px;}
+
+.boxsize {width:500px; height:80px;
+					font-size:11px;
+					text-align:left;
+					margin-left:50px; color:white;}
+
+.gobox {width:35px; height:20px;
+				background-color:gray; color:white;
+				cursor:pointer;
+				text-align:center;
+				line-height:20px;}	
+		
+</style>
+
+
+</head>
+
+<body>
+<header>
+ <div class="header">
+ 	<nav class="nav1">
+    	<ul class="ul1">
+        	<li><img src="img/seoul1.jpg"></li>
+        	<li><h5>함께서울</h5></li>
+            <li><h5>친환경</h5></li>
+            <li><h5>농장가꾸기</h5></li>
+            <li><h5>참여시민</h5></li>
+        </ul>
+        
+        <ul class="ul2">
+        	<li><h5>서울소식</h5></li>
+            <li><h5>응답소</h5></li>
+            <li><h5>정보공개</h5></li>
+            <li><img src="img/seoul2.jpg"></li>
+        </ul>
+    </nav>
+ </div>
+ 
+ <hr class="hr1">
+ 
+  <div class="header2">
+ 	<nav class="nav3">
+    	<ul class="ul3">
+        	<li><h4>홈</h4></li>
+            <li><h4>로그인</h4></li>
+            <li><h4>회원가입</h4></li>
+            <li><h4>사이트맵</h4></li>
+            <li><img src="img/seoul3.jpg"></li>
+        </ul>
+    </nav>
+ </div>
+ 
+  <hr>
+ 
+  <div class="header3">
+ 	<nav class="nav4">
+    	<ul class="ul4">
+        
+        	<li><img src="img/seoul4.jpg"></li>
+            <li><div class="left"><div><input id="input"></div>
+            <div class="input2">검색</div></div>
+            <div class="bottom">
+            <ul><h5>인기검색어</h5></ul>
+            <ul><h5>서울</h5></ul>
+            <ul><h5>국립극장</h5></ul>
+            <ul><h5>서울시청</h5></ul>
+			</div>
+           </li>
+
+    	<li class="input3"><img src="img/seoul5.jpg"></li>
+    	</ul>
+    </nav>
+ </div>
+			
+ 	<nav class="lnb">
+    	<ul class="ul5">
+        	<li>미래유산 둘러보기</li>
+            <li>참여하기</li>
+            <li>알아보기</li>
+            <li>미래유산 아카이브</li>
+ 		</ul>
+     </nav>
+</header>
+
+
+ 	<div class="main">
+    	<div class="main_img">
+            <img src="img/seoul6.jpg">
+ 		</div>
+     </div>
+
+        <div class="text">
+            <li><b>미래유산 찾아보기</b></li>
+            <li class="mrg2">전체보기</li>
+            <li class="mrg3"><b>미래유산 체험코스</b></li>
+            <li><img class="mrg4" src="img/seoul10.jpg"></li>   
+            <li><img class="mrg5" src="img/seoul11.jpg"></li>                    
+ 		</div>   
+
+        <div class="img">
+            <img src="img/seoul7.jpg">
+            <img class="mrg1" src="img/seoul8.jpg">
+ 		</div>
+        
+        <div class="img2">
+            <img src="img/seoul12.jpg">
+            <img src="img/seoul13.jpg">
+            <img src="img/seoul14.jpg">
+            <img src="img/seoul15.jpg">
+            <img src="img/seoul16.jpg">
+            <img src="img/seoul17.jpg">
+ 		</div>          
+
+	 
+     
+     
+     
+     <div class="text2">
+        <li><b>시민제안 미래유산</b>
+     	<img class="mrg12" src="img/seoul26.jpg">
+        <img class="mrg13" src="img/seoul18.png">
+    	<div><img class="mrg14" src="img/seoul29.jpg"></div></li>
+        
+        <li class="mrg15">
+       	 	<input type="radio" id="chk01" name="tap" checked>
+			<input type="radio" id="chk02" name="tap">
+
+			<div class="title">
+				<label for="chk01" class="btn01">새소식 </label>
+    			<label for="chk02" class="btn02">언론보도 <img class="button" src="img/seoul18.png"></label>
+			</div>
+            
+		<div class="sheet sheet01">
+				<ul class="han">
+            	<li>2017년 서울시 미래유산 민간단체 민간단체</li>
+                <li>[이벤트] 내가 만난 미래유산 탐방기 탐방기</li>
+                <li>서울미래유산 홈페이지 아카이브 서비스</li>
+                <li>서울미래유산 역사탐방 3회차 진행합니다</li>
+                <li>[이벤트] 체험코스 제안하기 이벤트 진행중</li>
+                <li>서울시, 故김영삼 대통령 단골 국수집</li>
+            </ul>
+            <ul class="date">
+            	<li>17.02.16</li>
+                <li>17.01.13</li>
+                <li>16.11.25</li>
+                <li>16.10.05</li>
+                <li>16.12.21</li>
+                <li>15.12.24</li>
+            </ul>			
+		</div>
+        
+		<div class="sheet sheet02">
+			언론보도
+		</div></li>
+
+        <li class="mrg16"><div class="mrg17"><b>서울미래유산 SNS</b>
+        <img class="mrg18" src="img/seoul27.jpg"></div>
+        <div><img src="img/seoul28.jpg"></div>
+        <div>
+        <textarea cols="20" rows="3" name="content">
+서울미래유산 프로젝트님이 새로운 사진 18장을 추가했습니다.
+ 2월22일 오후 8:36
+        	
+[김인턴의 마지막화?]  지금까지 '참 별거없던 김인턴의 컨텐츠'를 별거가 될 수 있게 지켜봐주신 모든분께 감사드립니다. '김인턴의 컨텐츠'를 사랑해주신 모든 분들 감사합니다.
+       
+       
+       
+
+
+
+
+
+ [김인턴의 마지막화?]  지금까지 '참 별거없던 김인턴의 컨텐츠'를 별거가 될 수 있게 지켜봐주신 모든분께 감사드립니다. '김인턴의 컨텐츠'를 사랑해주신 모든 분들 감사합니다.         
+</textarea>
+        
+        
+        </div>
+        </li>
+ 	</div>    
+    
+    <section class="cnt">
+ 	<div class="graybg">
+    	<div class="img3">
+            <li><b>영상으로 보는 미래유산</b></li>
+            <li class="mrg6"><img src="img/seoul18.png"></li>
+            <li class="mrg7"><b>서울미래유산 360 VR</b></li>
+            <li><img class="mrg8" src="img/seoul18.png"></li>   
+ 		</div>
+	</div>        
+    
+    <div class="img4">
+        <img src="img/seoul19.jpg">
+        <img class="mrg9" src="img/seoul20.jpg">
+        <img class="mrg10" src="img/seoul21.jpg">
+        <img class="mrg11" src="img/seoul22.jpg">
+	</div>
+    </section>
+    
+<footer>
+	<section class="fts1">
+    	<nav class="ft1">
+			<ul class="ftul1">
+            <li>관련사이트</li>
+            <li><img src="img/seoul23.jpg"></li>
+            <li>궁궐문화원  |</li>
+            </ul>
+            
+            <ul class="ftul1_2">
+            <li> | 문화유산국민신탁 </li>
+            <li> | 한국내셔널트러스트  </li>
+            </ul>    
+    	</nav>   
+    </section>
+    
+    <section class="fts2">
+    	<div class="ft2">
+    		<ul class="ftul2">
+            <li><img src="img/seoul25.jpg"></li>
+            <li class="textbox">
+           	<li class="boxsize"><div>개인정보처리방침 | 이용약관 | 사이트맵 | 저작권정책</div>
+            <div>서울특별시 문화본부 문화정책과 | 중구 덕수궁길 15 서소문별관 1동 4층 | TEL. 02-2133-2548, 2549
+			COPYRIGHT ⓒ 2016. SEOUL METROPOLITAN GOVERNMENT. ALL RIGHTS RESERVED.</div></li>
+            </ul>
+            
+            <ul class="ftul2_2">
+            <li><img src="img/seoul24.jpg"></li>
+            <li><select>
+ <option>관련사이트
+ <option>1
+ <option>2
+ <option>3
+</select>
+			</li>
+            <li class="gobox"><b>GO</b></li>
+            </ul>
+    	</div>  
+	</section>
+    
+</footer>    
+</body>
+</html>
